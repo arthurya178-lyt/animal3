@@ -3,7 +3,7 @@
 
   <div class="container" style="height: 1000px">
     <span >
-      helloWorld <!--測試顯示用-->
+      <h1>森友會物品查詢工具</h1><!--測試顯示用-->
       <br>
 
       <div class="dropdown " @click="toggleDropMenu"  style="display:inline;">
@@ -22,9 +22,6 @@
             </a>
             <a  class="dropdown-item" @click="toggleMenuSelection('DMselect2')" id="DMselect2">
               所有項目
-            </a>
-            <a class="dropdown-item" @click="toggleMenuSelection('DMselect3')" id="DMselect3">
-              活動名稱
             </a>
           </div>
         </div>
@@ -83,6 +80,8 @@ export default {
       {
         var displayText = "<ul>";
         var display = document.getElementById("displayResult");
+        if(productResult.length == 0)
+          displayText += '<strong>No Result</strong>'
         for(let i in productResult)
         {
           displayText += `<li> <a href='/${productResult[i].id}'>` + productResult[i].title + "</a></li>";
@@ -95,9 +94,12 @@ export default {
         var displayProduct = [];
         let index = 0;
         var searchBox = document.getElementById("searchBox").value;
+        var searchType = document.getElementById("DropDownMenuDisplay").innerText;
         for(var productIndex = 0; productIndex < Object.keys(productMenu).length;productIndex++) {
-          if(productMenu[productIndex].title.match(searchBox) != null && searchBox != "")
+          if((productMenu[productIndex].title.match(searchBox) != null && searchBox != "") || searchType == '所有項目')
+          {
             displayProduct[index++] = productMenu[productIndex];
+          }
         }
         for(let i in displayProduct)
         {
