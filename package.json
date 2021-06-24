@@ -55,5 +55,13 @@
   "description": "## Project setup ``` npm install ```",
   "main": "babel.config.js",
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arthurya178-pccu/animal3-vueCli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/arthurya178-pccu/animal3-vueCli/issues"
+  },
+  "homepage": "https://github.com/arthurya178-pccu/animal3-vueCli#readme"
 }
