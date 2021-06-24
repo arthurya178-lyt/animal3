@@ -58,10 +58,10 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/arthurya178-pccu/animal3-vueCli.git"
+    "url": "git+https://github.com/arthurya178-pccu/animal3.git"
   },
   "bugs": {
-    "url": "https://github.com/arthurya178-pccu/animal3-vueCli/issues"
+    "url": "https://github.com/arthurya178-pccu/animal3/issues"
   },
-  "homepage": "https://github.com/arthurya178-pccu/animal3-vueCli#readme"
+  "homepage": "https://github.com/arthurya178-pccu/animal3#readme"
 }
