@@ -2,7 +2,7 @@
 
 ## Project location
 ```
-cd animal3
+cd animal3-vueCli
 ```
 
 ## Project setup
